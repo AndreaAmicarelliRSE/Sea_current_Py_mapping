@@ -105,11 +105,17 @@ do
    call check(nf90_get_var(ncid,varid,vomecrty_in))
    if (read_coord==1) then
 ! To get the "varid" of "lonu", based on its name.
+! For MyOcean dataset
       call check(nf90_inq_varid(ncid,"lonu",varid))
+! For Copernicus dataset
+!      call check(nf90_inq_varid(ncid,"lon",varid))
 ! To read "lon"
       call check(nf90_get_var(ncid,varid,lon))
 ! To get the "varid" of "latu", based on its name.
+! For MyOcean dataset
       call check(nf90_inq_varid(ncid,"latu",varid))
+! For Copernicus dataset
+!      call check(nf90_inq_varid(ncid,"lat",varid))
 ! To read "lat"
       call check(nf90_get_var(ncid,varid,lat))
 ! To get the "varid" of "depth", based on its name.
