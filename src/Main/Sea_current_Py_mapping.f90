@@ -1,8 +1,8 @@
 PROGRAM Sea_current_Py_mapping
 !-------------------------------------------------------------------------------
-! "Sea current Py ITA mapping v.1.0" 
+! "Sea current Py mapping v.1.0" 
 ! Copyright 2016 (RSE SpA)
-! "Sea current Py ITA mapping v.1.0" authors and email contact are provided on 
+! "Sea current Py mapping v.1.0" authors and email contact are provided on 
 ! the documentation file.
 ! This program is free software: you can redistribute it and/or modify
 ! it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@ PROGRAM Sea_current_Py_mapping
 ! along with this program. If not, see <http://www.gnu.org/licenses/>.
 !-------------------------------------------------------------------------------
 !-------------------------------------------------------------------------------
-! Description: "Sea current Py ITA mapping v.1.0" is a minor tool, which reads a
+! Description: "Sea current Py mapping v.1.0" is a minor tool, which reads a
 !              formatted ".nc" file from the free dataset of MetOcean-INGV at 
 !              www.myocean.eu on daily mean current synoptic-scale velocity (of 
 !              a given year) and provides the yearly average of the specific 
@@ -76,7 +76,7 @@ nfile = 0
 ! Statements
 !------------------------
 write(*,*)                                                                     &
-"Sea current Py ITA mapping v.1.0 is a minor tool, which reads a formatted ",  &
+"Sea current Py mapping v.1.0 is a minor tool, which reads a formatted ",      &
 ".nc file from the free dataset of MetOcean-INGV at www.myocean.eu on daily ", &
 "mean current synoptic-scale velocity (of a given year) and provides the ",    &
 "yearly average of the specific power flow of marine currents ",               &
@@ -263,7 +263,7 @@ do k=1,ndepth
 enddo  
 close(3) 
 write(*,*) "End writing .vtk output" 
-write(*,*) "Sea current Py ITA mapping v.1.0 has terminated. "
+write(*,*) "Sea current Py mapping v.1.0 has terminated. "
 !------------------------
 ! Deallocations
 !------------------------
